@@ -18,7 +18,8 @@
     "webpack-bundle-analyzer": "^2.11.1",
     "webpack-cli": "^2.0.11",
     "webpack-dev-server": "^3.1.1",
-    "webpack-merge": "^4.1.2"
+    "webpack-merge": "^4.1.2",
+    "workbox-webpack-plugin": "^3.0.0"
   },
   "dependencies": {
     "csv-loader": "^2.1.1",

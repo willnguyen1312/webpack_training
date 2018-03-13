@@ -1,12 +1,12 @@
-async function getComponent() {
-  var element = document.createElement("div");
-  const _ = await import(/* webpackChunkName: "loda" */ "lodash");
+import _ from 'lodash';
+import printMe from './print.js';
 
-  element.innerHTML = _.join(["Hello", "webpack"], " ");
-
-  return element;
-}
-
-getComponent().then(component => {
-  document.body.appendChild(component);
-});
++ if ('serviceWorker' in navigator) {
++   window.addEventListener('load', () => {
++     navigator.serviceWorker.register('/sw.js').then(registration => {
++       console.log('SW registered: ', registration);
++     }).catch(registrationError => {
++       console.log('SW registration failed: ', registrationError);
++     });
++   });
++ }
